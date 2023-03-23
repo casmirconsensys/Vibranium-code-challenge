@@ -1,7 +1,7 @@
 pragma solidity ^0.8.17;
 
 contract vcapitalPool {
-    mapping(address(mapping=>uint256))) public stakedBalances;
+    mapping(address(mapping(address=>uint256))) public stakedBalances;
     //stakedBalances is a mapping of addresses to a mapping of addresses to uint256
     //stakedBalances is the amount of tokens that are staked by an address
     //stakedBalances is the amount of tokens that are staked by an address on a specific token
